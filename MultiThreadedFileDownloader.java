@@ -1,5 +1,3 @@
-package org.example;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.RandomAccessFile;
@@ -12,7 +10,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.function.Supplier;
 
-public class MutliThreadedFileDownloader {
+public class MultiThreadedFileDownloader {
     private static final String URL_PATH = "https://github.com/club-de-programacion-competitiva/libros/raw/refs/heads/master/Cracking-the-Coding-Interview-6th-Edition-189-Programming-Questions-and-Solutions.pdf";
     private static final String DOWNLOAD_PATH = "C:\\Users\\govin\\Downloads\\Cracking the coding interview.pdf";
     private static final String FILE_MODE = "rw";

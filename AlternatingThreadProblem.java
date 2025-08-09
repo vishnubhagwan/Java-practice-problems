@@ -1,9 +1,7 @@
-package org.example;
-
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class AlternatingThreadProblemMain {
+public class AlternatingThreadProblem {
     public static void main(String[] args) throws InterruptedException {
         String foo = "foo";
         String bar = "bar";
