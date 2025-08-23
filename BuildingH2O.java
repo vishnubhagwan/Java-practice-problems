@@ -4,8 +4,8 @@ import java.util.concurrent.*;
 public class BuildingH2O {
     static class H2O {
         private final CyclicBarrier barrier;
-        private Semaphore hydrogen = new Semaphore(2);
-        private Semaphore oxygen = new Semaphore(1);
+        private final Semaphore hydrogen = new Semaphore(2);
+        private final Semaphore oxygen = new Semaphore(1);
 
         public H2O() {
             barrier = new CyclicBarrier(3, () -> {
