@@ -6,8 +6,6 @@ import java.util.concurrent.locks.ReentrantLock;
 public class MultithreadedBankApp {
     static double currentBalance = 0.0;
     static final ReentrantLock lock = new ReentrantLock();
-    static final Random rand = new Random();
-    private static final int MOD = 500;
 
     static class Deposit implements Runnable {
         double amount;
